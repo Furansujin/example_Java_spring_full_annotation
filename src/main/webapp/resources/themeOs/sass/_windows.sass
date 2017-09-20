@@ -1,0 +1,147 @@
+.window
+  position: fixed
+  top: 0
+  left: 25vw
+  height: 600px
+  width: 600px
+  border-style: solid
+  border-color: $colorWindows
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  background-color: white
+  box-shadow: 1px 1px 12px #555
+  border-top-width: 6px
+  border-top-color: $colorBorderTopWindows
+
+
+
+.window__side, .window__main
+  flex: 0 1 auto
+  overflow: auto
+
+.window__side
+  overflow: auto
+  width: 25%
+  min-width: 200px
+  padding: 10px
+  background-color: #ECEFF1
+
+
+
+.window__titlebar
+  top: 0px
+  right: 0px
+  left: 0px
+  height: 35px
+  padding: 5px 0px
+  text-align: center
+  background-color: $colorWindows
+  color: white
+  font-size: 18px
+  font-family: 'Audiowide', cursive
+
+ 
+.window__controls
+  >
+    a
+      > i
+        font-size: medium !important
+      display: block
+      float: left
+      height: 32px
+      width: 32px
+      line-height: 32px
+      font-size: 12px
+      transition: all 100ms
+      cursor: default
+      color: rgba(0, 0, 0, 0.5)
+      &:hover
+        background-color: rgba(255, 255, 255, 0.5)
+    .window__close 
+      color: white
+      background: $colorBorderTopWindows
+      opacity: 1
+      border-radius: 0px 0px 0px 0px
+      &:hover
+        background-color: #F32F2F
+  position: absolute
+  top: 0
+  z-index: 10
+
+
+
+.window__controls--left
+  left: 0
+
+
+
+.window__controls--right
+  right: 0
+
+
+
+.window
+  .title, .title2
+    padding: 5px 0px
+    text-align: center
+    background-color: #2E2E2E
+    color: white
+    border-radius: 14px 14px 0px 0px
+    font-size: 18px
+    font-family: 'Audiowide', cursive
+
+
+.folders > a
+  display: inline-block
+  padding: 10px
+  margin: 5px
+  width: 72px
+  height: 72px
+  text-align: center
+  border: 1px solid transparent
+  color: #607D8B
+  cursor: pointer
+  &:hover
+    color: #1976D2
+    border-color: rgba(0, 0, 0, 0.1)
+    background-color: rgba(236, 239, 241, 0.5)
+  >
+    i
+      display: block
+      font-size: 32px
+    span
+      display: block
+
+.side__list
+  margin: 0
+  padding: 0
+  font-size: 18px
+  font-weight: 200
+  > li
+    margin-bottom: 10px
+  li
+    list-style: none
+    a
+      position: relative
+      display: block
+      padding: 3px 5px 3px 32px
+      border: 1px solid transparent
+      color: #546E7A
+      transition: all 100ms
+      &:hover
+        color: #263238
+        border-color: rgba(0, 0, 0, 0.1)
+        background-color: rgba(0, 0, 0, 0.05)
+  ul
+    padding: 0
+    font-size: 14px
+    li
+      > a
+        padding-left: 42px
+      li > a
+        padding-left: 52px
+
+.window__main
+  padding: 10px
+  width: 100%
+  background-color: #f4f4f4

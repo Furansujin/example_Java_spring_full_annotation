@@ -1,0 +1,60 @@
+@import 'variables'
+@import 'desktop'
+@import 'windows'
+@import 'taskbar'
+@import 'start-menu'
+  
+body
+  background-color: #FFFFFF
+  font-family: 'Audiowide', cursive
+  width: 100%
+  height: 80%
+ 
+
+
+.start-menu-fade
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9998
+  background-color: rgba(0, 0, 0, 0.7)
+
+
+
+.menu-start
+  position: fixed
+  bottom: 48px
+  top: 48px
+  left: 0px
+  z-index: 9999
+  width: 600px
+  background-color: $colorStartMenu
+  transform: translate(-100%, 0)
+  transition: all 300ms
+
+
+
+.transforme_menu-start 
+  transform: none
+
+
+#declencheur
+  text-align: center
+  margin-top: 20px
+  &:hover
+    cursor: pointer
+    text-decoration: underline
+  &:active
+    color: blue
+#content
+  text-align: center
+  color: #FF4000
+  padding: 2px
+  height: 550px
+  width: 595px
+
+
+
